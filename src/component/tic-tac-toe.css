@@ -37,9 +37,7 @@
 
 
 .winner{
-    color: rgb(142, 142, 196);
-  
-    
+    color: rgb(142, 142, 196);    
 }
 
 .reset{
@@ -66,16 +64,12 @@
         height: 900px;
     }
 }
-
-body{
-    
+body{  
     background-size: cover;
     width: 100wh;
     height: 100vh;
 }
-
 .container{
-    /* border: 1px solid red; */
     width: 40%;
    margin: 70px;
    margin-top: 20px;
