@@ -112,19 +112,19 @@ const TicTacToe = () => {
     }
 
 
-//     const Cell = ({ n }) => {
-//         return (
-//             <td className="cell" onClick={() => {
+    const Cell = ({ n }) => {
+        return (
+            <td className="cell" onClick={() => {
 
-//                 handleClick(n)
+                handleClick(n)
 
-//             }} >{value[n] === "X" ? <img style={{ width: "60%" }} src={T} alt="none" /> :
-//                 value[n] === "O" ? <img style={{ width: "60%" }} src={O} alt="none" /> :
-//                     <p></p>
-//                 }
-//             </td>
-//         )
-//     }
+            }} >{value[n] === "X" ? <img style={{ width: "60%" }} src={T} alt="none" /> :
+                value[n] === "O" ? <img style={{ width: "60%" }} src={O} alt="none" /> :
+                    <p></p>
+                }
+            </td>
+        )
+    }
 
 //     return (
 //         <>
