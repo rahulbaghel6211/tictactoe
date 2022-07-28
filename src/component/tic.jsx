@@ -126,57 +126,56 @@ const TicTacToe = () => {
         )
     }
 
-//     return (
-//         <>
-//             <div className="title">Tic-Tac-Toe</div>
-//             <div className="container">
-//                 {
-//                     win === null ?
-//                         <>
-//                             <h1 style={{ color: "rgb(67,21,31)" }}>!!Play The Game!!</h1>
-//                             <h2 style={{ color: "rgb(67,21,31)" }}>Turn of : {turn}</h2>
-//                             <table className="table">
-//                                 <tbody>
-//                                     <tr>
-//                                         <Cell n={0} />
-//                                         <Cell n={1} />
-//                                         <Cell n={2} />
-//                                     </tr>
-//                                     <tr>
-//                                         <Cell n={3} />
-//                                         <Cell n={4} />
-//                                         <Cell n={5} />
-//                                     </tr>
-//                                     <tr>
-//                                         <Cell n={6} />
-//                                         <Cell n={7} />
-//                                         <Cell n={8} />
-//                                     </tr>
-//                                 </tbody>
-//                             </table>
-//                         </>
-//                         : win === "No one" ?
-//                             <>
-//                                 <div className="tie">
-//                                     <h1 style={{ color: "rgb(67,21,31)" }}>!Its a Tie!</h1>
-//                                     <img src={''} alt="none" />
-//                                     <h3 className="reset">Click on the restart button to play again</h3>
-//                                     <button className="reset-btn" onClick={() => {
-//                                         playAgain()
-//                                     }} > Restart </button>
-//                                 </div>
-//                             </> :
-//                             <div className="result">
-//                                 <h1 className="winner">{win} is the winner</h1>
-//                                 <h3 className="reset">Click on the restart button to play again</h3>
-//                                 <button className="reset-btn" onClick={() => {
-//                                     playAgain()
-//                                 }} > Restart </button>
-//                             </div>
-//                 }
-//             </div>
-//         </>
-//     )
-// }
+    return (
+        <>
+            <div className="title">Tic-Tac-Toe</div>
+            <div className="container">
+                {
+                    win === null ?
+                        <>
+                            <h1 style={{ color: "rgb(67,21,31)" }}>!!Play The Game!!</h1>
+                            <h2 style={{ color: "rgb(67,21,31)" }}>Turn of : {turn}</h2>
+                            <table className="table">
+                                <tbody>
+                                    <tr>
+                                        <Cell n={0} />
+                                        <Cell n={1} />
+                                        <Cell n={2} />
+                                    </tr>
+                                    <tr>
+                                        <Cell n={3} />
+                                        <Cell n={4} />
+                                        <Cell n={5} />
+                                    </tr>
+                                    <tr>
+                                        <Cell n={6} />
+                                        <Cell n={7} />
+                                        <Cell n={8} />
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </>
+                        : win === "No one" ?
+                            <>
+                                <div className="tie">
+                                    <h1 style={{ color: "rgb(67,21,31)" }}>!Its a Tie!</h1>
+                                    <img src={''} alt="none" />
+                                    <h3 className="reset">Click on the restart button to play again</h3>
+                                    <button className="reset-btn" onClick={() => {
+                                        playAgain()
+                                    }} > Restart </button>
+                                </div>
+                            </> :
+                            <div className="result">
+                                <h1 className="winner">{win} is the winner</h1>
+                                <h3 className="reset">Click on the restart button to play again</h3>
+                                <button className="reset-btn" onClick={() => {
+                                    playAgain()
+                                }} > Restart </button>
+                            </div>
+                }
+            </div>
+        </>
+    )
 
-// export { TicTacToe };
+export { TicTacToe };
