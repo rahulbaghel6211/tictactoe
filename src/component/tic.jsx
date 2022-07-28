@@ -86,30 +86,30 @@ const TicTacToe = () => {
 
     }
 
-//     const handleClick = (n) => {
+    const handleClick = (n) => {
 
 
-//         if (value[n] !== "") {
-//             alert("Already Clicked");
-//             return;
-//         }
+        if (value[n] !== "") {
+            alert("Already Clicked");
+            return;
+        }
 
-//         let square = [...value];
+        let square = [...value];
 
         
-//         if (turn === "X") {
-//             square[n] = "X";
-//             setTurn("O")
-//         }
-//         else {
-//             square[n] = "O";
-//             setTurn("X")
-//         }
+        if (turn === "X") {
+            square[n] = "X";
+            setTurn("O")
+        }
+        else {
+            square[n] = "O";
+            setTurn("X")
+        }
 
-//         setValue(square)
-//         setCount(count + 1)
+        setValue(square)
+        setCount(count + 1)
 
-//     }
+    }
 
 
 //     const Cell = ({ n }) => {
