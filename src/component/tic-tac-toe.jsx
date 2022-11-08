@@ -17,11 +17,6 @@ const TicTacToe = () => {
     const [win, setWin] = useState(null);
 
     const [count, setCount] = useState(0);
-
-
-
-
-
     useEffect(() => {
         winner();
     })
@@ -62,8 +57,7 @@ const TicTacToe = () => {
                 ) {
 
                 } else if (
-                    value[p[0]] === value[p[1]] &&
-                    value[p[1]] === value[p[2]]
+                    value[p[0]] === value[p[1]] && value[p[1]] === value[p[2]]
                 ) {
                     setWin(value[p[0]])
 
